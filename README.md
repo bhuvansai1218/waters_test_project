@@ -1,17 +1,5 @@
-# terraform-provider-artifactory
+# waters-corporation-provider-artifactory
 
-Manage [Artifactory](http://jfrog.io) with Terraform
-
-[![CircleCI](https://circleci.com/gh/webdevwilson/terraform-provider-artifactory.svg?style=svg)](https://circleci.com/gh/webdevwilson/terraform-provider-artifactory)
-
-## Installation via Homebrew
-
-```bash
-brew tap drewsonne/tap
-brew install terraform-provider-artifactory
-tf-install-provider artifactory
-```
-See details at https://github.com/drewsonne/homebrew-tap/blob/master/terraform-provider-artifactory.rb
 
 ## Provider
 
@@ -40,16 +28,7 @@ provider "artifactory" {
 
 Provides support for creating groups in Artifactory. 
 
-**This resource requires Artifactory Pro v2.4.0 or later**.
 
-#### Example Usage
-
-```hcl
-resource "artifactory_group" "developers" {
-    name      = "developers"
-    auto_join = true
-}
-```
 
 #### Argument Reference
 
